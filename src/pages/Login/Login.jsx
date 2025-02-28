@@ -32,14 +32,14 @@ const Login = () => {
         <h1>{signState}</h1>
         <form>
           {signState === "Sign up" ? <input value={name} onChange={(e)=>{setName(e.target.value)}} 
-          type="text" placeholder="Seto Dwi Laksono" /> : <></>}
+          type="text" placeholder="Username" /> : <></>}
           
           <input 
           value={email} onChange={(e)=>{setEmail(e.target.value)}}
-          type="email" placeholder="14107" />
+          type="email" placeholder="Your email" />
           <input 
           value={password} onChange={(e)=>{setPassword(e.target.value)}}
-          type="password" placeholder="mission intermediate"/>
+          type="password" placeholder="Password"/>
           <button onClick={user_auth} type="submit">{signState}</button>
           <div className="form-help">
             <div className="remember">
